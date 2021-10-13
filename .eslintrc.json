@@ -1,6 +1,7 @@
 {
     "env": {
         "browser": true,
+        "commonjs": true,
         "es2021": true
     },
     "extends": [
@@ -11,5 +12,7 @@
         "sourceType": "module"
     },
     "rules": {
+        "linebreak-style": 0,
+        "no-alert": 0
     }
 }
