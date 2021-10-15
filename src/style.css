@@ -4,45 +4,67 @@
   font-family: sans-serif;
 }
 
-nav {}
+body {
+  font-size: 10px;
+  background-color: #f8906d;
+  color: #221a43;
+}
 
 #content {
-  /* position: absolute; */
-  outline: 5px solid red;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
+nav {
+  font-size: 3.4em;
+}
+
 main {
   position: relative;
   flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.all-image {
-  outline: 2px solid blue;
-  /* width: 100%; */
+.main-logo {
+  position: absolute;
+  border: 1px solid #221a43;
+  height: 360px;
+  width: 360px;
+  left: -1%;
+  top: 3%;
+  /* border-radius: 50%; */
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  border-radius: 200px;
+  align-items: center;
 }
 
-.landscape-img {
+.main-logo h2 {
+  font-weight: lighter;
+  font-size: 8em;
+}
+
+.main-slogan {
+  z-index: 1;
+  font-size: 8em;
+  text-align: center;
+}
+
+.main-image .landscape-img {
   position: absolute;
   left: 10%;
-  /* bottom: 80%; */
-  top: 28%;
-  /* bottom: 57px; */
+  top: 34%;
   width: 800px;
   height: 537px;
   background: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.portrait-img {
+.main-image .portrait-img {
   position: absolute;
-  /* top: 57px; */
   top: 10%;
   right: 10%;
   width: 476px;
@@ -50,26 +72,21 @@ img {
   background: url("https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=780&q=80")
 }
 
-img {
-  width: 40%;
+.main-image img {
+  max-width: 100%;
   height: auto;
 }
 
-ul {
-  outline: 1px solid green;
-  /* width: 100%; */
+.menu-upper-home ul, .menu-down-home ul {
   display: flex;
   justify-content: space-between;
-  padding: 18px;
-}
-
-li {
+  padding: 18px 32px;
   list-style: none;
+  text-decoration: none;
 
 }
 
 a {
   text-decoration: none;
-  color: #000;
-
+  color: #221a43;
 }
