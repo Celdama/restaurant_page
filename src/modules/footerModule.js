@@ -1,8 +1,8 @@
-import elementFactory from './elementFactory';
-import appendElementToParent from './appendElementToParent';
+import elementFactory from '../elementFactory';
+import appendElementToParent from '../appendElementToParent';
 
 const displayNavBarDown = () => {
-  const footer = elementFactory('footer', '', '');
+  const footer = elementFactory('footer', '', 'footer');
   const navDownHome = elementFactory('nav', '', 'menu-down-home');
   const ulNavDownHome = elementFactory('ul', '', '');
   const firstLi = elementFactory('li', '', '');

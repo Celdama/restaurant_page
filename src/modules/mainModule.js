@@ -1,8 +1,9 @@
-import elementFactory from './elementFactory';
-import appendElementToParent from './appendElementToParent';
+import elementFactory from '../elementFactory';
+import appendElementToParent from '../appendElementToParent';
 
 const displayMainContent = () => {
-  const mainContent = elementFactory('main', '', '');
+  const mainContent = elementFactory('main', '', 'main-content');
+  const wrapperContent = elementFactory('div', '', 'wrapper-content');
   const contentLogo = elementFactory('div', '', 'main-logo');
   const contentSlogan = elementFactory('div', '', 'main-slogan');
   const contentImage = elementFactory('div', '', 'main-image');
@@ -18,9 +19,13 @@ const displayMainContent = () => {
   appendElementToParent(contentSlogan.el, slogan);
   appendElementToParent(contentImage.el, landscapeImage, portraitImage);
 
-  appendElementToParent(mainContent.el, contentLogo, contentSlogan, contentImage);
+  appendElementToParent(wrapperContent.el, contentLogo, contentSlogan, contentImage);
+  appendElementToParent(mainContent.el, wrapperContent);
 
-  return mainContent.el;
+  return {
+    mainContent,
+    wrapperContent,
+  };
 };
 
 export default displayMainContent;

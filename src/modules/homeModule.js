@@ -6,7 +6,7 @@ const content = document.getElementById('content');
 
 const displayHomePage = () => {
   const nav = displayNavBarUpper();
-  const main = displayMainContent();
+  const main = displayMainContent().mainContent.el;
   const footer = displayNavBarDown();
 
   content.appendChild(nav);
