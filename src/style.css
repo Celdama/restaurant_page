@@ -18,6 +18,7 @@ body {
 
 nav {
   font-size: 3.4em;
+  border: 1px solid greenyellow;
 }
 
 main {
@@ -96,4 +97,30 @@ main {
 a {
   text-decoration: none;
   color: #221a43;
+}
+
+
+.wrapper-menu {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2eeeb;
+  font-size: 1.9rem;
+  width: 100%;
+  border: 1px solid blue;
+}
+
+.wrapper-menu .img-menu {
+  background: url('../baobab-degustacion-c.jpg') no-repeat center;
+  height: 700px;
+  width: 650px;
+}
+
+.menu {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

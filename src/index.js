@@ -3,7 +3,7 @@ import displayOurMenu from './modules/menuModule';
 import displayOurReservation from './modules/reservationsModule';
 import displayMainContent from './modules/mainModule';
 
-displayHomePage('home');
+displayHomePage();
 
 const firstNavLink = document.querySelector('.upper-left');
 const secondNavLink = document.querySelector('.upper-center');
