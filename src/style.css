@@ -42,7 +42,6 @@ main {
   width: 360px;
   left: -1%;
   top: 3%;
-  /* border-radius: 50%; */
   transform: rotate(-38deg);
 
   z-index: 1;
@@ -158,4 +157,16 @@ a {
 .wrapper-menu .menu-logo {
   position: fixed;
   top: 9.5%;
+  transform: rotate(-38deg);
+}
+
+.wrapper-reservation {
+  color: red;
+  position: absolute;
+  top: -36%;
+  z-index: 100;
+  height: 300px;
+  background-color: black;
+  width: 100%;
+  transition: top .8s ease-in-out;
 }
