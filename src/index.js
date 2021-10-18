@@ -46,11 +46,13 @@ const randomIntegerInRange = (min, max) => Math.floor(Math.random() * (max - min
 window.setInterval(() => {
   const random = randomIntegerInRange(0, 4);
   landscapeImg.style.background = `url("${landscapeURLs[random]}") no-repeat center`;
+  landscapeImg.style.transition = 'all .6s ease-in-out';
 }, 5000);
 
 window.setInterval(() => {
   const random = randomIntegerInRange(0, 4);
   portraitImg.style.background = `url("${portraitURLs[random]}") no-repeat center`;
+  portraitImg.style.transition = 'all .6s ease-in-out';
 }, 6000);
 
 const home = displayMainContent().wrapperContent.el;

@@ -83,7 +83,7 @@ main {
   top: 34%;
   width: 800px;
   height: 537px;
-  background: url("./images/landscape/landscape1.png");
+  background: url("./images/landscape/landscape2.png");
   background-position: center;
   /* transition: all 2s ease-in-out; */
 }
@@ -94,7 +94,7 @@ main {
   right: 10%;
   width: 476px;
   height: 619px;
-  background: url("https://images.unsplash.com/photo-1528826007177-f38517ce9a8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80") no-repeat center;
+  background: url("./images/portrait/portrait2.png") no-repeat center;
   /* transition: all 5s ease; */
   background-position: center;
 }
