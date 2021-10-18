@@ -1,3 +1,4 @@
+import './style.css';
 import displayHomePage from './modules/homeModule';
 import displayOurMenu from './modules/menuModule';
 import displayMainContent from './modules/mainModule';
