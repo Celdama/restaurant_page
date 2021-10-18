@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Poiret+One&family=Urbanist:wght@100;200;300;400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +26,7 @@ body::-webkit-scrollbar {
 
 nav {
   font-size: 3.4em;
+  /* font-family: Helvetica, sans-serif; */
 }
 
 main {
@@ -59,13 +62,20 @@ main {
 
 .main-logo h2 {
   font-weight: lighter;
-  font-size: 8em;
+  font-family: 'Poiret One', cursive;
+  font-size: 12em;
 }
 
 .main-slogan {
   z-index: 10;
-  font-size: 8em;
+  font-size: 9em;
+  width: 45%;
   text-align: center;
+  transform: rotate(355deg);
+}
+
+.main-slogan h3 {
+  font-family: 'Libre Caslon Text', serif;
 }
 
 .main-image .landscape-img {
@@ -106,6 +116,9 @@ main {
 a {
   text-decoration: none;
   color: #221a43;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.6px;
 }
 
 
@@ -122,19 +135,22 @@ a {
 .wrapper-menu .price-menu {
   font-size: 2.5em;
   color: #f8906d;
+  font-family: 'Urbanist', sans-serif;
 }
 
 .wrapper-menu .span-menu {
   font-size: 1.9em;
   padding: 2em 0 .3em 0;
+  font-family: 'Urbanist', sans-serif;
 }
 
 .wrapper-menu .title-menu {
-  font-size: 15em;
+  font-size: 16em;
+  font-family: 'Libre Caslon Text', serif;
 }
 
 .wrapper-menu .img-menu {
-  background: url('../baobab-degustacion-c.jpg') no-repeat center;
+  background: url('../menu-img.jpg') no-repeat center;
   height: 700px;
   width: 650px;
 }
@@ -155,18 +171,26 @@ a {
 .menu li {
   font-size: 2.5em;
   padding: 1em 0;
+  font-family: 'Urbanist', sans-serif;
 }
 
 .menu .menu-section {
   color: #f8906d;
   font-size: 6.5em;
   padding: 1.1em 0;
+  font-family: 'Libre Caslon Text', serif;
 }
 
 .wrapper-menu .menu-logo {
   position: fixed;
   top: 9.5%;
-  transform: rotate(-38deg);
+  transform: rotate(0deg);
+  border-color: #f8906d;
+}
+
+.wrapper-menu .menu-logo h2 {
+  color: #f8906d;
+  font-family: 'Poiret One', cursive;
 }
 
 .wrapper-reservation {
@@ -190,12 +214,14 @@ a {
 .content-reservation .title-reservation {
   font-size: 4rem;
   padding: 1rem;
+  font-family: 'Libre Caslon Text', serif;
 }
 
 .content-reservation .describe-reservation {
   text-align: center;
   font-size: 1.2rem;
   width: 50%;
+  font-family: 'Urbanist', sans-serif;
 }
 
 .close-reservation-btn {

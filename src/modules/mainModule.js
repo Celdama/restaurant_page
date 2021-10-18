@@ -10,7 +10,7 @@ const displayMainContent = () => {
 
   const logo = elementFactory('h2', 'HEBE', '');
 
-  const slogan = elementFactory('h3', 'Vegetarian cuisine without dogmas or complexes', '');
+  const slogan = elementFactory('h3', 'Vegetarian cuisine without dogmas or complexes.', '');
 
   const landscapeImage = elementFactory('div', '', 'landscape-img');
   const portraitImage = elementFactory('div', '', 'portrait-img');
