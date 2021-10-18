@@ -51,7 +51,6 @@ main {
   left: -1%;
   top: 3%;
   transform: rotate(-38deg);
-
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -85,7 +84,6 @@ main {
   height: 537px;
   background: url("./images/landscape/landscape2.png");
   background-position: center;
-  /* transition: all 2s ease-in-out; */
 }
 
 .main-image .portrait-img {
@@ -95,7 +93,6 @@ main {
   width: 476px;
   height: 619px;
   background: url("./images/portrait/portrait2.png") no-repeat center;
-  /* transition: all 5s ease; */
   background-position: center;
 }
 
@@ -122,6 +119,10 @@ a {
   font-family: 'Urbanist', sans-serif;
   font-weight: 400;
   letter-spacing: 1.6px;
+}
+
+.menu-upper-home a:hover {
+  cursor: pointer;
 }
 
 
@@ -240,4 +241,8 @@ a {
 .close-reservation-btn:hover {
   cursor: pointer;
   transform: rotate(180deg);
+}
+
+footer .social-icon {
+  padding: 0 8px;
 }
