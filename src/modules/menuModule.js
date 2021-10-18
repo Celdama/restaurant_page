@@ -1,6 +1,7 @@
 import appendElementToParent from '../appendElementToParent';
 import elementFactory from '../elementFactory';
 import displayMainContent from './mainModule';
+import Image from '../images/menu-img.jpg';
 
 const foods = [
   ['Snacks', 'Sopa Pho', 'Qüorn and curry croquette'],
@@ -20,6 +21,7 @@ const displayOurMenu = () => {
   const logo = displayMainContent().contentLogo;
 
   logo.el.classList.add('menu-logo');
+  imgMenu.el.style.background = `url("${Image}") no-repeat center`;
 
   foods.forEach((food) => {
     const menuSection = elementFactory('h2', `${food[0]}`, 'menu-section');

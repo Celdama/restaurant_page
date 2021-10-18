@@ -2,6 +2,18 @@ import displayHomePage from './modules/homeModule';
 import displayOurMenu from './modules/menuModule';
 import displayMainContent from './modules/mainModule';
 
+import landscape1 from './images/landscape/landscape1.png';
+import landscape2 from './images/landscape/landscape2.png';
+import landscape3 from './images/landscape/landscape3.png';
+import landscape4 from './images/landscape/landscape4.png';
+import landscape5 from './images/landscape/landscape5.png';
+
+import portrait1 from './images/portrait/portrait1.png';
+import portrait2 from './images/portrait/portrait2.png';
+import portrait3 from './images/portrait/portrait3.png';
+import portrait4 from './images/portrait/portrait4.png';
+import portrait5 from './images/portrait/portrait5.png';
+
 displayHomePage();
 
 const firstNavLink = document.querySelector('.upper-left');
@@ -14,19 +26,19 @@ const landscapeImg = document.querySelector('.landscape-img');
 const portraitImg = document.querySelector('.portrait-img');
 
 const landscapeURLs = [
-  'https://images.unsplash.com/photo-1581375321224-79da6fd32f6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-  'https://images.unsplash.com/photo-1581375279144-bb3b381c7046?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80',
-  'https://images.unsplash.com/photo-1581375221876-8f287f7cd2cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80',
-  'https://images.unsplash.com/photo-1581375383680-7101dc5cb5f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80',
-  'https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1539&q=80',
+  landscape1,
+  landscape2,
+  landscape3,
+  landscape4,
+  landscape5,
 ];
 
 const portraitURLs = [
-  'https://images.unsplash.com/photo-1528825871115-3581a5387919?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80',
-  'https://images.unsplash.com/photo-1517355806904-a4458978d6d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=813&q=80',
-  'https://images.unsplash.com/photo-1531171421955-98c62fcd562f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=704&q=80',
-  'https://images.unsplash.com/photo-1531171491537-435164f3d486?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80',
-  'https://images.unsplash.com/photo-1622219770326-d72a22862986?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80',
+  portrait1,
+  portrait2,
+  portrait3,
+  portrait4,
+  portrait5,
 ];
 
 const randomIntegerInRange = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
@@ -54,7 +66,7 @@ secondNavLink.addEventListener('click', () => {
 });
 
 closeReservationContent.addEventListener('click', () => {
-  reservationContent.style.top = '-46%';
+  reservationContent.style.top = '-50%';
 });
 
 thirdNavLink.addEventListener('click', () => {
