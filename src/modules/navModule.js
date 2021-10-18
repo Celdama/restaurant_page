@@ -8,7 +8,7 @@ const displayNavBarUpper = () => {
   const secondLi = elementFactory('li', '', 'second-li');
   const thirdLi = elementFactory('li', '', 'third-li');
   const firstLink = elementFactory('a', 'Home', 'upper-left');
-  const secondLink = elementFactory('a', 'Reservations and orders', 'upper-center');
+  const secondLink = elementFactory('a', 'Reservations', 'upper-center');
   const thirdLink = elementFactory('a', 'Tasting menu', 'upper-right');
 
   appendElementToParent(firstLi.el, firstLink);

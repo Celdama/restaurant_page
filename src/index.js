@@ -24,7 +24,7 @@ secondNavLink.addEventListener('click', () => {
 });
 
 closeReservationContent.addEventListener('click', () => {
-  reservationContent.style.top = '-36%';
+  reservationContent.style.top = '-46%';
 });
 
 thirdNavLink.addEventListener('click', () => {
