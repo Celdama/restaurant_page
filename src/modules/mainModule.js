@@ -25,6 +25,7 @@ const displayMainContent = () => {
   return {
     mainContent,
     wrapperContent,
+    contentLogo,
   };
 };
 

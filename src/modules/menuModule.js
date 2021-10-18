@@ -1,5 +1,6 @@
 import appendElementToParent from '../appendElementToParent';
 import elementFactory from '../elementFactory';
+import displayMainContent from './mainModule';
 
 const foods = [
   ['Snacks', 'Sopa Pho', 'Qüorn and curry croquette'],
@@ -16,6 +17,10 @@ const displayOurMenu = () => {
   const imgMenu = elementFactory('div', '', 'img-menu');
   const menu = elementFactory('div', '', 'menu');
 
+  const logo = displayMainContent().contentLogo;
+
+  logo.el.classList.add('menu-logo');
+
   foods.forEach((food) => {
     const menuSection = elementFactory('h2', `${food[0]}`, 'menu-section');
     const menuDescription = elementFactory('ul', '', 'menu-description');
@@ -27,7 +32,15 @@ const displayOurMenu = () => {
     appendElementToParent(menu.el, menuSection, menuDescription);
   });
 
-  appendElementToParent(wrapperMenu.el, priceMenu, spanMenu, titleMenu, imgMenu, menu);
+  const scrollRotate = () => {
+    logo.el.style.transform = `rotate(${window.pageYOffset / 6}deg)`;
+  };
+
+  window.onscroll = () => {
+    scrollRotate();
+  };
+
+  appendElementToParent(wrapperMenu.el, priceMenu, spanMenu, titleMenu, imgMenu, menu, logo);
 
   return wrapperMenu.el;
 };
